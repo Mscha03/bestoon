@@ -93,6 +93,10 @@ def register(request):
         context = {'message': ''}
         return render(request, 'register.html', context)
 
+def index(request):
+    context = {}
+    return render(request, 'index.html', context)
+
 @csrf_exempt
 def submit_income(request):
     """user submits an income"""
